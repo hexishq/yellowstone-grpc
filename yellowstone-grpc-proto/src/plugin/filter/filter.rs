@@ -559,6 +559,8 @@ impl<'a> FilterAccountsMatch<'a> {
     }
 
     fn match_ata_owner(&mut self, data: &[u8]) {
+        println!("{:?}", self.ata_owner);
+
         if data.len() != 165 {
             return;
         }
