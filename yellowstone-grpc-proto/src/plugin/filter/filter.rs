@@ -561,11 +561,12 @@ impl<'a> FilterAccountsMatch<'a> {
     }
 
     fn match_ata_owner(&mut self, data: &[u8], token: Option<TokenPrograms>) {
-        println!("Ata owner {:?}", self.account);
-
-        if data.len() <= 165 {
+        dbg!(&self.account);
+        dbg!(data.len());
+        if data.len() < 165 {
             return;
         }
+        dbg!(Pubkey::new_from_array(data[32..64].try_into().unwrap()));
 
         match token.unwrap() {
             TokenPrograms::TokenProgram => {
