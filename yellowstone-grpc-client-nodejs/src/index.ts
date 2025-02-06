@@ -106,8 +106,10 @@ export default class Client {
       switch (endpointURL.protocol) {
         case "https:":
           port = "443";
+          break;
         case "http:":
           port = "80";
+          break;
       }
     }
 
@@ -175,7 +177,7 @@ export default class Client {
           commitment,
           accountsDataSlice,
         },
-        (err) => {
+        (err: any) => {
           if (err === null || err === undefined) {
             resolve();
           } else {

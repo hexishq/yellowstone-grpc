@@ -16,11 +16,70 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ### Breaking
 
+## 2025-02-06
+
+- @triton-one/yellowstone-grpc@3.0.0
+- yellowstone-grpc-client-simple-5.0.0
+- yellowstone-grpc-client-5.0.0
+- yellowstone-grpc-geyser-5.0.0
+- yellowstone-grpc-proto-5.0.0
+
+### Fixes
+
+- geyser: fix filter with followed ping ([#532](https://github.com/rpcpool/yellowstone-grpc/pull/532))
+
+### Breaking
+
+- proto: add enum `SlotStatus` ([#529](https://github.com/rpcpool/yellowstone-grpc/pull/529))
+
+## 2025-02-05
+
+- yellowstone-grpc-client-simple-4.4.1
+- yellowstone-grpc-client-4.2.1
+- yellowstone-grpc-geyser-4.3.1
+- yellowstone-grpc-proto-4.2.1
+
+### Fixes
+
+- geyser: runtime error on invalid commitment ([#528](https://github.com/rpcpool/yellowstone-grpc/pull/528))
+
+## 2025-02-05
+
+- @triton-one/yellowstone-grpc@2.1.0
+- yellowstone-grpc-client-simple-4.4.0
+- yellowstone-grpc-client-4.2.0
+- yellowstone-grpc-geyser-4.3.0
+- yellowstone-grpc-proto-4.2.0
+
+### Features
+
+- proto: add field `interslot_updates` ([#527](https://github.com/rpcpool/yellowstone-grpc/pull/527))
+
+## 2025-01-13
+
+- yellowstone-grpc-client-4.1.1
+
+### Fixes
+
+- client: re-export `ClientTlsConfig` ([#512](https://github.com/rpcpool/yellowstone-grpc/pull/512))
+
+## 2025-01-07
+
+- @triton-one/yellowstone-grpc@2.0.0
+
+### Fixes
+
+- nodejs: fix port for https ([#502](https://github.com/rpcpool/yellowstone-grpc/pull/502))
+
+### Breaking
+
+- nodejs: support ESM environment ([#509](https://github.com/rpcpool/yellowstone-grpc/pull/509))
+
 ## 2024-12-16
 
-- yellowstone-grpc-client-simple-3.3.0
-- yellowstone-grpc-geyser-3.2.2
-- yellowstone-grpc-proto-3.1.1
+- yellowstone-grpc-client-simple-4.3.0
+- yellowstone-grpc-geyser-4.2.2
+- yellowstone-grpc-proto-4.1.1
 
 ### Fixes
 
@@ -32,7 +91,7 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ## 2024-12-15
 
-- yellowstone-grpc-geyser-3.2.1
+- yellowstone-grpc-geyser-4.2.1
 
 ### Fixes
 
@@ -40,10 +99,10 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ## 2024-12-13
 
-- yellowstone-grpc-client-simple-3.2.0
-- yellowstone-grpc-client-3.1.0
-- yellowstone-grpc-geyser-3.2.0
-- yellowstone-grpc-proto-3.1.0
+- yellowstone-grpc-client-simple-4.2.0
+- yellowstone-grpc-client-4.1.0
+- yellowstone-grpc-geyser-4.2.0
+- yellowstone-grpc-proto-4.1.0
 
 ### Fixes
 
@@ -60,8 +119,8 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ## 2024-12-01
 
-- yellowstone-grpc-client-simple-3.1.0
-- yellowstone-grpc-geyser-3.1.0
+- yellowstone-grpc-client-simple-4.1.0
+- yellowstone-grpc-geyser-4.1.0
 
 ### Features
 
@@ -72,11 +131,22 @@ The minor version will be incremented upon a breaking change and the patch versi
 
 ## 2024-11-28
 
-- yellowstone-grpc-geyser-3.0.1
+- yellowstone-grpc-geyser-4.0.1
 
 ### Fixes
 
 - geyser: raise default filter name length limit ([#473](https://github.com/rpcpool/yellowstone-grpc/pull/473))
+
+## 2024-11-21
+
+- yellowstone-grpc-client-simple-4.0.0
+- yellowstone-grpc-client-4.0.0
+- yellowstone-grpc-geyser-4.0.0
+- yellowstone-grpc-proto-4.0.0
+
+### Features
+
+- solana: upgrade to v2.1.1 ([#468](https://github.com/rpcpool/yellowstone-grpc/pull/468))
 
 ## 2024-11-20
 

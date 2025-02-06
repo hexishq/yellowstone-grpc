@@ -1,10 +1,10 @@
 [workspace]
 resolver = "2"
 members = [
-    "examples/rust", # 3.3.0+solana.2.0.21
-    "yellowstone-grpc-client", # 3.1.0+solana.2.0.21
-    "yellowstone-grpc-geyser", # 3.2.2+solana.2.0.21
-    "yellowstone-grpc-proto", # 3.1.1+solana.2.0.21
+    "examples/rust", # 5.0.0+solana.2.1.11
+    "yellowstone-grpc-client", # 5.0.0+solana.2.1.11
+    "yellowstone-grpc-geyser", # 5.0.0+solana.2.1.11
+    "yellowstone-grpc-proto", # 5.0.0+solana.2.1.11
 ]
 exclude = [
     "yellowstone-grpc-client-nodejs/solana-encoding-wasm", # 3.0.0
@@ -21,7 +21,7 @@ publish = false
 
 [workspace.dependencies]
 affinity = "0.1.2"
-agave-geyser-plugin-interface = "=2.0.21"
+agave-geyser-plugin-interface = "=2.1.11"
 anyhow = "1.0.62"
 backoff = "0.4.0"
 base64 = "0.22.1"
@@ -55,13 +55,13 @@ prost_011 = { package = "prost", version = "0.11.9" }
 protobuf-src = "1.1.0"
 serde = "1.0.145"
 serde_json = "1.0.86"
-solana-account-decoder = "=2.0.21"
-solana-logger = "=2.0.21"
-solana-sdk = "=2.0.21"
-solana-storage-proto = "=2.0.21"
-solana-transaction-status = "=2.0.21"
+solana-account-decoder = "=2.1.11"
+solana-logger = "=2.1.11"
+solana-sdk = "=2.1.11"
+solana-storage-proto = "=2.1.11"
+solana-transaction-status = "=2.1.11"
 smallvec = "1.13.2"
-spl-token-2022 = "4.0.0"
+spl-token-2022 = "6.0.0"
 thiserror = "1.0.63"
 tokio = "1.21.2"
 tokio-stream = "0.1.11"
@@ -69,8 +69,8 @@ tonic = "0.12.1"
 tonic-build = "0.12.1"
 tonic-health = "0.12.1"
 vergen = "9.0.0"
-yellowstone-grpc-client = { path = "yellowstone-grpc-client", version = "3.1.0" }
-yellowstone-grpc-proto = { path = "yellowstone-grpc-proto", version = "3.1.1", default-features = false }
+yellowstone-grpc-client = { path = "yellowstone-grpc-client", version = "5.0.0" }
+yellowstone-grpc-proto = { path = "yellowstone-grpc-proto", version = "5.0.0", default-features = false }
 
 [workspace.lints.clippy]
 clone_on_ref_ptr = "deny"
@@ -80,8 +80,3 @@ trivially_copy_pass_by_ref = "deny"
 [profile.release]
 lto = true
 codegen-units = 1
-
-# https://github.com/anza-xyz/agave/blob/v2.0.4/Cargo.toml#L502-L533
-[patch.crates-io.curve25519-dalek]
-git = "https://github.com/anza-xyz/curve25519-dalek.git"
-rev = "b500cdc2a920cd5bff9e2dd974d7b97349d61464"
